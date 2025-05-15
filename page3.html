@@ -4,10 +4,35 @@
 	<title>Camp Rock </title>
 
 
-
+<link href="style.css" type="text/css" rel="stylesheet" />
 </head>
+
+
 <body>
 
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  	<a href="index.html">Home</a>
+    <a href="page2.html">High School Musical</a>
+    <a href="page3.html">Camp Rock</a>
+    <a href="page4.html">Descendants</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+	 
+		
 	<center><h1>Camp Rock</h1></center>
 	<center><p>2008 - Family/Musical - 1h 37m</p></center>
 	<center><a href="https://www.youtube.com/watch?v=X_oj3K_DUgE" target="_blank"><img src="campRockEdited.jpg"></a></center>
@@ -34,7 +59,7 @@
 	</ol>
 	
 
-	<a href="index.html">home</a>
+
 
 </body>	
 

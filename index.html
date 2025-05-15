@@ -3,29 +3,54 @@
 <head>
 	<title>my bootiful website</title>
 
-
+<link href="style.css" type="text/css" rel="stylesheet" />
 
 </head>
 <body>
-	<center><img src="disneyLogo.png"></center>
-	<h1><center> Disney Channel </center></h1>
-
-	<p></p>
-	<ol>
-	<li><a href="page2.html">High School Musical</a></li>
-		<li><a href="page3.html">Camp Rock</a></li>
-			<li><a href="page4.html">Descendants</a></li>
-	</ol>
 
 
-	<center><table border="1">
+<div id="colorBandHome"><div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  	<a href="index.html">Home</a>
+    <a href="page2.html">High School Musical</a>
+    <a href="page3.html">Camp Rock</a>
+    <a href="page4.html">Descendants</a>
+
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+	<div class="home"><center><img src="disneyLogo.png" alt= "Disney Channel"></center></div>
+	<h1><center>Disney Channel</center></h1></div>
+
+
+
+	<center><table border="0">
 		<tr>
-			<th>High School Musical</th>
-			<th>Camp Rock</th>
-			<th>Descendants</th>
+			<th style="color:red;"> High School Musical</th> 
+
+			<th style="color:blue;">Camp Rock</th>
+			<th style="color:green;">Descendants</th>
 		</tr>
 
-		<h2 style="text-align:center">My Favorite Movies</h2>
+		
+
+		<p> Disney Channel began in 1983, and rose to fame early on. It has produced some of the most iconic movies and TV shows of all time. Here are my favorites:</p>
+
+		<h3 style="text-align:center">My Favorite Movies</h3>
+
 		<tr>
 			<td><a href="page2.html" High School Musical><img src="hsmPoster2.jpg" alt="High School Musical"/></a></td>
 			<td><a href="page3.html"Camp Rock><img src="campRockEdited.jpg" alt="Camp Rock"/></a></td>
@@ -33,10 +58,6 @@
 		</tr>
 
 	</table></center>
-	<img src="text.jpg" alt="photo"/>
-
-
-	
 
 
 </body>	
